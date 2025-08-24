@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+ 
+:root {
+  --primary: linear-gradient(135deg, #6366f1, #ec4899); /* Indigo → Pink */
+  --accent: linear-gradient(135deg, #14b8a6, #06b6d4); /* Teal → Cyan */
+  --background: #f8fafc; /* Soft White */
+  --text-primary: #0f172a; /* Dark Navy */
+  --text-secondary: #475569; /* Gray */
+  --header-cooler: #e0f7fa;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--text-primary);
+    padding-top: 70px;
+    z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+    #backgroundVideo {
+        display: none;
+    }
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: var(--accent);
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    background-color: rgba(228, 227, 227, 0.7);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.logo-holder {
+    margin-left: 20px;
+}
+
+.logo-holder a {
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: var(--button-color);
+}
+
+.main {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+
+.welcome-massage {
+    width: 70vw;
+    margin: auto;
+}
+
+.about-desc {
+    width: 40vw;
+    margin: auto;
+}
+
+.profile-photo {
+    margin: auto;
+    width: 20vw;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    border: 1.5px solid rgb(67, 65, 65);
+    box-shadow: 0 0 60px black;
+
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+.service-container {
+    width: 90vw;
+    background-color: #06b6d4;
+    margin: auto;
+    height: 255px;
+    backdrop-filter: blur(100px);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-container {
+    width: 90vw;
+    margin: auto;
+    height: 255px;
+    backdrop-filter: blur(100px);
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container h2{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+form {
+    width: auto;
+    padding: 0.75rem;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
